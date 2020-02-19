@@ -16,10 +16,16 @@ const Post = props => {
     <div className="post-border">
       <PostHeader
         username={props.post.username}
-        thumbnailUrl={props.post.thumbnailUrl}
+        thumbnailUrl={
+          props.post.thumbnailUrl
+        }
       />
       <div className="post-image-wrapper">
-        <img alt="post thumbnail" className="post-image" src={props.post.imageUrl} />
+        <img
+          alt="post thumbnail"
+          className="post-image"
+          src={props.post.imageUrl}
+        />
       </div>
 
       <LikeSection likes={likes} addLikes={upLikes} />
